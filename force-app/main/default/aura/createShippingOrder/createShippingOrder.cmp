@@ -1,0 +1,37 @@
+<aura:component controller="ShippingProjectController" description="newOrderForm" implements="lightning:actionOverride,force:hasRecordId, force:lightningQuickActionWithoutHeader">
+
+    <aura:attribute name="status" type="String" />
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="shippingProject" type="String"/>
+    <aura:attribute name="customer" type="Customer"/>
+    <aura:attribute name="typeOfGoods" type="String"/>
+    <aura:attribute name="plannedTEU" type="Decimal"/>
+    <aura:attribute name="showSpinner" type="Boolean" default="false"/>
+
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />   
+
+    <lightning:card title="New Shipping order" footer="Footer">
+        <lightning:recordEditForm objectApiName="Shipping_Order__c">
+            <lightning:select value="v.status" aura:id="statusSelect" name="statusSelect" label="Status" required="true">
+                <option value="">--None--</option>
+                <option value="New">New</option>
+                <option value="Approved">Approved</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Delivered">Delivered</option>
+            </lightning:select>
+        </lightning:recordEditForm>
+
+        <lightning:recordEditForm  objectApiName="Shipping_Project__c">
+            <lightning:messages/>
+            <lightning:inputField fieldName="Name" value="{!v.shippingProject}"/>
+        </lightning:recordEditForm>
+
+        <lightning:recordEditForm objectApiName="Shipping_Project__c">
+            <lightning:messages/>
+            <lightning:inputField fieldName="Name" value="{!v.shippingProject}"/>
+        </lightning:recordEditForm>
+
+    </lightning:card>
+
+</aura:component>	

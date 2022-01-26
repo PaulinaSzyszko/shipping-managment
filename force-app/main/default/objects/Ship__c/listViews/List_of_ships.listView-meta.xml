@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>List_of_ships</fullName>
+    <columns>NAME</columns>
+    <columns>Total_TEU__c</columns>
+    <columns>Class__c</columns>
+    <columns>Current_position__Latitude__s</columns>
+    <columns>Current_position__Longitude__s</columns>
+    <columns>Draught__c</columns>
+    <columns>Ship_owner__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>List of ships</label>
+</ListView>

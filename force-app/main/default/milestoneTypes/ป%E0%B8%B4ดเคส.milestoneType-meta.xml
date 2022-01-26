@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MilestoneType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>ตั้งหลักไมล์แบบเกิดซ้ำเป็นลำดับสำหรับการปิดเคส</description>
+    <recurrenceType>recursChained</recurrenceType>
+</MilestoneType>

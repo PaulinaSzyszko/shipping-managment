@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accounts_list</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ACCOUNT_NUMBER</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <columns>Total_orders__c</columns>
+    <columns>Number_of_ships__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <filterScope>Mine</filterScope>
+    <label>Accounts list</label>
+</ListView>
