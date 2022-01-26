@@ -1,6 +1,6 @@
-<aura:component controller="ShippingProjectController" description="newOrderForm" implements="lightning:actionOverride,force:hasRecordId, force:lightningQuickActionWithoutHeader">
+<aura:component description="newOrderForm" implements="lightning:actionOverride,force:hasRecordId, force:lightningQuickActionWithoutHeader">
 
-    <aura:attribute name="status" type="String" default="New"/>
+    <aura:attribute name="deafultStatus" type="String" default="New"/>
     <aura:attribute name="recordId" type="String"/>
     <aura:attribute name="shippingProject" type="String"/>
     <aura:attribute name="account" type="String"/>
@@ -10,10 +10,10 @@
 
  
     <lightning:card title="New Shipping order" footer="Footer">
-        <lightning:recordEditForm objectApiName="Shipping_Order__c">
+        <lightning:recordEditForm objectApiName="Shipping_Order__c" onsubmit="{!c.handleClick}">
          
             <lightning:messages/>
-            <lightning:inputField fieldName="Status__c" value="{!v.status}"/>
+            <lightning:inputField fieldName="Status__c" value="{!v.deafultStatus}"/>
 
             <lightning:messages/>
             <lightning:inputField fieldName="Shipping_Project__c" value="{!v.shippingProject}"/>
@@ -27,7 +27,7 @@
             <lightning:messages/>
             <lightning:inputField fieldName="Planned_TEU__c" value="{!v.plannedTEU}"/>
 
-            <lightning:button name="save" type="submit" label="Save"/>
+            <lightning:button name="save" type="submit" label="Save" />
         </lightning:recordEditForm>
 
     </lightning:card>
