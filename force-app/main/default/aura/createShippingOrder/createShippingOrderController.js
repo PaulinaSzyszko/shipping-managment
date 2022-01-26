@@ -3,10 +3,7 @@
 
     },
 
-    doInit : function(component, event, helper) {
-        component.find("statusSelect").set("v.value","New");
-        
-    }
+   
 
  
 })
