@@ -1,4 +1,4 @@
-<aura:component description="newOrderForm" implements="lightning:actionOverride,force:hasRecordId, force:lightningQuickActionWithoutHeader">
+<aura:component description="newOrderForm" implements="lightning:actionOverride,force:hasRecordId,force:lightningQuickActionWithoutHeader">
 
     <aura:attribute name="deafultStatus" type="String" default="New"/>
     <aura:attribute name="recordId" type="String"/>
@@ -32,4 +32,4 @@
 
     </lightning:card>
 
-</aura:component>	
+</aura:component>

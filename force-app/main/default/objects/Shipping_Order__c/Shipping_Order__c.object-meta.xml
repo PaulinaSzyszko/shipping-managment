@@ -128,11 +128,14 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Shipping_Order_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <formFactor>Large</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -156,7 +159,7 @@
     <label>Shipping Order</label>
     <nameField>
         <displayFormat>{YYYY}-{MM}-{DD}-{00000}</displayFormat>
-        <label>Shipping Order Name</label>
+        <label>Order Name</label>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Shipping Orders</pluralLabel>

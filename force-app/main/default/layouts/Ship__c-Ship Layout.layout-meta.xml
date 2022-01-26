@@ -65,7 +65,14 @@
     </layoutSections>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Ship_Class__c</fields>
+        <fields>Ship_Owner__c</fields>
+        <fields>Status__c</fields>
+        <fields>Total_planned_TEU__c</fields>
+        <fields>UPDATEDBY_USER</fields>
         <relatedList>Shipping_Project__c.Ship__c</relatedList>
+        <sortField>NAME</sortField>
+        <sortOrder>Asc</sortOrder>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

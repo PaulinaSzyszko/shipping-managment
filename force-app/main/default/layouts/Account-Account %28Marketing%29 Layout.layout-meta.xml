@@ -328,14 +328,26 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Draught__c</fields>
+        <fields>Total_TEU__c</fields>
         <relatedList>Ship__c.Ship_owner__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Status__c</fields>
+        <fields>Ship__c</fields>
+        <fields>Ship_Owner__c</fields>
+        <fields>Actual_Planned_TEU__c</fields>
+        <fields>UPDATEDBY_USER</fields>
         <relatedList>Shipping_Project__c.Origin_port__c</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
+        <fields>Status__c</fields>
+        <fields>Ship__c</fields>
+        <fields>Ship_Owner__c</fields>
+        <fields>Actual_Planned_TEU__c</fields>
+        <fields>UPDATEDBY_USER.ALIAS</fields>
         <relatedList>Shipping_Project__c.Destination_Port__c</relatedList>
     </relatedLists>
     <relatedLists>

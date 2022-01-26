@@ -16,16 +16,12 @@
                 <field>ParentId</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Address__c</field>
+                <behavior>Readonly</behavior>
+                <field>Number_of_ships__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Maximum_ship_size__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Director__c</field>
+                <behavior>Readonly</behavior>
+                <field>Total_number_of_ships_TEU__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -57,17 +53,28 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
-            <actionName>Edit</actionName>
-            <actionType>StandardButton</actionType>
+            <actionName>NewAccount</actionName>
+            <actionType>QuickAction</actionType>
             <sortOrder>0</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>NewAccount</actionName>
-            <actionType>QuickAction</actionType>
+            <actionName>ChangeRecordType</actionName>
+            <actionType>StandardButton</actionType>
             <sortOrder>1</sortOrder>
         </platformActionListItems>
+        <platformActionListItems>
+            <actionName>Edit</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>2</sortOrder>
+        </platformActionListItems>
     </platformActionList>
-    <quickActionList/>
+    <relatedContent>
+        <relatedContentItems>
+            <layoutItem>
+                <component>runtime_sales_social:socialPanel</component>
+            </layoutItem>
+        </relatedContentItems>
+    </relatedContent>
     <relatedLists>
         <fields>NAME</fields>
         <fields>Draught__c</fields>
@@ -77,20 +84,12 @@
     <relatedLists>
         <fields>NAME</fields>
         <fields>Status__c</fields>
-        <fields>Ship__c</fields>
-        <fields>Ship_Owner__c</fields>
-        <fields>Actual_Planned_TEU__c</fields>
-        <fields>UPDATEDBY_USER</fields>
-        <relatedList>Shipping_Project__c.Origin_port__c</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>Status__c</fields>
-        <fields>Ship__c</fields>
-        <fields>Ship_Owner__c</fields>
-        <fields>Actual_Planned_TEU__c</fields>
-        <fields>UPDATEDBY_USER.ALIAS</fields>
-        <relatedList>Shipping_Project__c.Destination_Port__c</relatedList>
+        <fields>Types_of_goods__c</fields>
+        <fields>Planned_TEU__c</fields>
+        <fields>LAST_UPDATE</fields>
+        <relatedList>Shipping_Order__c.Customer__c</relatedList>
+        <sortField>NAME</sortField>
+        <sortOrder>Asc</sortOrder>
     </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>
@@ -99,7 +98,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h7Q000000lFet</masterLabel>
+        <masterLabel>00h7Q000000lFeo</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

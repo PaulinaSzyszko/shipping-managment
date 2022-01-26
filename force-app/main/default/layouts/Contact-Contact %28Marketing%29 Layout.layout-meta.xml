@@ -271,9 +271,14 @@
     </relatedLists>
     <relatedLists>
         <fields>ACCOUNT.NAME</fields>
-        <fields>ACCOUNT.ADDRESS1_CITY</fields>
         <fields>ACCOUNT.PHONE1</fields>
+        <fields>Number_of_ships__c</fields>
+        <fields>ACCOUNT.OWNERSHIP</fields>
+        <fields>Shipping_Order__c</fields>
+        <fields>Total_orders__c</fields>
         <relatedList>Account.Director__c</relatedList>
+        <sortField>ACCOUNT.NAME</sortField>
+        <sortOrder>Asc</sortOrder>
     </relatedLists>
     <relatedObjects>AccountId</relatedObjects>
     <runAssignmentRulesDefault>false</runAssignmentRulesDefault>

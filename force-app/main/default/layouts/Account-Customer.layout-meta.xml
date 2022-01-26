@@ -71,20 +71,21 @@
             <sortOrder>1</sortOrder>
         </platformActionListItems>
     </platformActionList>
-    <relatedContent>
-        <relatedContentItems>
-            <layoutItem>
-                <component>runtime_sales_social:socialPanel</component>
-            </layoutItem>
-        </relatedContentItems>
-    </relatedContent>
     <relatedLists>
-        <fields>ORDERS.ORDER_NUMBER</fields>
-        <fields>ORDERS.STATUS</fields>
-        <fields>ORDERS.EFFECTIVE_DATE</fields>
-        <fields>CONTRACT.CONTRACT_NUMBER</fields>
-        <fields>ORDERS.TOTAL_AMOUNT</fields>
-        <relatedList>RelatedOrderList</relatedList>
+        <fields>NAME</fields>
+        <fields>Draught__c</fields>
+        <fields>Total_TEU__c</fields>
+        <relatedList>Ship__c.Ship_owner__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <fields>Status__c</fields>
+        <fields>Types_of_goods__c</fields>
+        <fields>Planned_TEU__c</fields>
+        <fields>CREATED_DATE</fields>
+        <relatedList>Shipping_Order__c.Customer__c</relatedList>
+        <sortField>NAME</sortField>
+        <sortOrder>Asc</sortOrder>
     </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>
