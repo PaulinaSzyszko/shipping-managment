@@ -1,15 +1,20 @@
-<aura:component description="newOrderForm" implements="lightning:actionOverride,force:hasRecordId,force:lightningQuickActionWithoutHeader">
+<aura:component description="newOrderForm" implements="lightning:actionOverride, force:hasRecordId, force:lightningQuickActionWithoutHeader">
 
     <aura:attribute name="deafultStatus" type="String" default="New"/>
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="shippingProject" type="String"/>
+    <aura:attribute name="account" type="String"/>
+    <aura:attribute name="typeOfGoods" type="String"/>
+    <aura:attribute name="plannedTEU" type="Decimal"/>
 
     <lightning:card title="New Shipping order">
-        <lightning:recordEditForm objectApiName="Shipping_Order__c" onsuccess="{!c.handleClick}">
+        <lightning:recordEditForm objectApiName="Shipping_Order__c" onsubmit="{!c.handleClick}">
             <lightning:inputField fieldName="Status__c" value="{!v.deafultStatus}"/>
-            <lightning:inputField fieldName="Shipping_Project__c" value="{!v.recordId}"/>
-            <lightning:inputField fieldName="Customer__c"/>
-            <lightning:inputField fieldName="Types_of_goods__c"/>
-            <lightning:inputField fieldName="Planned_TEU__c"/>
+            <lightning:inputField fieldName="Shipping_Project__c" value="{!v.shippingProject}"/>
+            <lightning:inputField fieldName="Customer__c" value="{!v.account}"/>
+            <lightning:inputField fieldName="Types_of_goods__c" value="{!v.typeOfGoods}"/>
+            <lightning:inputField fieldName="Planned_TEU__c" value="{!v.plannedTEU}"/>
             <lightning:button name="save" type="submit" label="Save" />
         </lightning:recordEditForm>
     </lightning:card>
-</aura:component>
+</aura:component>	
